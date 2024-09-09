@@ -4,7 +4,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div className='shadow-sm border-b sticky top-0 z-30 bg-white'>
+    <div className='shadow-sm border-b sticky top-0 z-30 bg-white p-3'>
         <div className='flex justify-between items-center max-w-6xl mx-auto'>
             {/* logo */}
 
