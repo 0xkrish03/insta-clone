@@ -29,21 +29,12 @@ const Header = () => {
 
         {/* menu items */}
         {session ? (
-          <div>
-            {session.user?.image ? (
               <img
-                src={session.user.image ?? '/default-avatar.png'}  // Fallback image
+                src={session.user?.image ?? '/default-avatar.png'}  // Fallback image
                 alt={session.user?.name ?? 'User Avatar'}  // Fallback alt text
                 className='h-10 w-10 rounded-full cursor-pointer'
                 onClick={()=>signOut()}
               />
-            ) : (
-              <img
-                src='/default-avatar.png'  // Fallback image
-                alt='Default Avatar'  // Fallback alt text
-              />
-            )}
-          </div>
         ) : (
           <button
             onClick={() => signIn()}  // Wrap signIn in an arrow function
